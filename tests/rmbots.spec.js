@@ -9,7 +9,7 @@ const scrollSize = 1492;
 
 // How long to loop for
 // normally this is too much, because how many followers are you gonna have anyway
-const loopFor = 100;
+const loopFor = 5;
 
 test("Twitter TimeLine Scraper", async ({ page }) => {
   // upper bound of our execution time
@@ -66,7 +66,7 @@ test("Twitter TimeLine Scraper", async ({ page }) => {
         // ====== This is where you sort of modify your check logic ====== //
         // I check if the follower's uname contains 5 or more consecutive digits
         // the current spam bot meta username
-        if (/\d{5,}/.test(followerUname)) {
+        if ((/\d{5,}/.test(followerUname)) || (/rabbi/gi.test(followerUname))) {
           var menuButton = await followers.nth(f).locator('div[aria-label="More"][role="button"]');
           await menuButton.click();
           // Wait for the 'Remove follower' option to appear. If there isn't we scroll down.
