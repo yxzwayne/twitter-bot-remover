@@ -4,6 +4,8 @@ with a somewhat automated method, of course.
 
 This only liberates you from clicking each bot follower, but you still gotta clone this, maybe also install nvm/npm and a chromium (god forbid), whatever.
 
+The playwright script was modified from Yiming's [Twitter Banger Generator](https://github.com/yiminghan/twitter-banger-generator).
+
 ## Functionality
 
 It logs onto your account, goes into the followers page/tab (not "Verified Followers" if that matters!!!) and removes as many bot followers meeting a custom criteria as before a bug hits. Right now there shouldn't be any bugs but oh well.
