@@ -5,3 +5,5 @@ node_modules/
 /playwright/.cache/
 
 config.json
+.DS_Store
+

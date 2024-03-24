@@ -35,6 +35,7 @@ This is to say we check for 5 or more consecutive numbers in the follower userna
 From here on, you can either
 - run the test in a supported IDE (i.e. VSCode with Playwright plugin),
 - `npx playwright test --project=LocalChrome`
+- or, like me, just run the `run.sh`. 
 
 whichever works best for you.
 
